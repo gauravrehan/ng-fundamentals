@@ -30,4 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://github.com/jmcooper/angular-fundamentals-files
 
+## Use following command to install required packages
+
+npm install ngf-bootstrap --save
 
