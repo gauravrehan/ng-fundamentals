@@ -19,9 +19,6 @@ export class EventsListComponent {
         }
     }
 
-    handleEventClicked(data)
-    {
-        console.log("Data received: ",  data);
-    }
+   
     
 }
