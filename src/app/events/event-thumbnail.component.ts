@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, Output} from "@angular/core";
     templateUrl: './event-thumbnail.component.html',
     styles: [`
     .pad-left {margin-left: 10px;}
-    .well div {color: #bbb;}
+    .well div {color: red;}
     `]
 })
 export class EventThumbnailComponent{
