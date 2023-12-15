@@ -8,6 +8,7 @@ import {
   EventDetailsComponent,
   CreateEventComponent,
   CreateSessionComponent,
+  SessionListComponent,
   EventService,
   EventRouteActivator,
   EventListResolver
@@ -34,6 +35,7 @@ import { AuthService } from './user/auth.service';
     EventDetailsComponent,
     CreateEventComponent,
     CreateSessionComponent,
+    SessionListComponent,
     NavbarComponent,
     Error404Component
   ],
