@@ -17,6 +17,7 @@ import { EventRouteActivator } from './events/event-details/event-route-activato
 import { appRoutes } from './routes';
 
 import { Error404Component } from './error/404.component';
+import { EventListResolver } from './events/events-list-resolver.service';
 
 
 
@@ -40,6 +41,7 @@ import { Error404Component } from './error/404.component';
     EventService,
     ToastrService,
     EventRouteActivator,
+    EventListResolver,
     {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState}
   ],
   bootstrap: [EventsAppComponent]
