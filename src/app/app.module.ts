@@ -12,8 +12,12 @@ import { NavbarComponent } from './nav/navbar.component';
 
 import { EventService } from './events/shared/event.service';
 import { ToastrService } from './common/toastr.service';
+import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 
 import { appRoutes } from './routes';
+
+import { Error404Component } from './error/404.component';
+
 
 
 
@@ -29,11 +33,13 @@ import { appRoutes } from './routes';
     EventThumbnailComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    NavbarComponent
+    NavbarComponent,
+    Error404Component
   ],
   providers: [
     EventService,
-    ToastrService
+    ToastrService,
+    EventRouteActivator
   ],
   bootstrap: [EventsAppComponent]
 })
