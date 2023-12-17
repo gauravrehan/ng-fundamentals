@@ -14,6 +14,8 @@ import {
   EventListResolver
 } from './events/index'
 
+import  { CollapsibleWellComponent } from './common/collapsible-well.component'
+
 import { EventsAppComponent } from './events-app.component';
 import { NavbarComponent } from './nav/navbar.component';
 import { ToastrService } from './common/toastr.service';
@@ -36,6 +38,7 @@ import { AuthService } from './user/auth.service';
     CreateEventComponent,
     CreateSessionComponent,
     SessionListComponent,
+    CollapsibleWellComponent,
     NavbarComponent,
     Error404Component
   ],
