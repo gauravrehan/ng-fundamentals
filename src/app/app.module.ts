@@ -11,7 +11,8 @@ import {
   SessionListComponent,
   EventService,
   EventRouteActivator,
-  EventListResolver
+  EventListResolver,
+  DurationPipe
 } from './events/index'
 
 import  { CollapsibleWellComponent } from './common/collapsible-well.component'
@@ -40,7 +41,8 @@ import { AuthService } from './user/auth.service';
     SessionListComponent,
     CollapsibleWellComponent,
     NavbarComponent,
-    Error404Component
+    Error404Component,
+    DurationPipe
   ],
   providers: [
     EventService,
