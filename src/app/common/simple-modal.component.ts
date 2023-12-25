@@ -15,13 +15,16 @@ import { JQ_TOKEN } from "./jQuery.service";
         @Input() title :string;
         @Input() elementId :string;
         @ViewChild('modalcontainer') containerEl : ElementRef;
+        @Input() closeOnBodyClick: string;
 
         constructor(@Inject(JQ_TOKEN) private $: any){
 
         }
 
         closeModal(){
+            if(this.closeOnBodyClick.toLocaleLowerCase() === "true"){
             this.$(this.containerEl.nativeElement).modal('hide');
+            }
         }
 
     }
