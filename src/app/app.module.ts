@@ -12,7 +12,10 @@ import {
   EventService,
   EventRouteActivator,
   EventListResolver,
-  DurationPipe
+  DurationPipe,
+  UpvoteComponent,
+  VoterService,
+  LocationValidator
 } from './events/index'
 
 import { EventsAppComponent } from './events-app.component';
@@ -48,7 +51,9 @@ let jQuery = window['$'];
     Error404Component,
     DurationPipe,
     SimpleModalComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    UpvoteComponent,
+    LocationValidator
 
   ],
   providers: [
@@ -70,7 +75,8 @@ let jQuery = window['$'];
     //{provide: Logger, useFactory: Logger}
 
     
-    {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState}
+    {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState},
+    VoterService
     
   ],
   bootstrap: [EventsAppComponent]
